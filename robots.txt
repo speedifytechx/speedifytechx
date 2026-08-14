@@ -1,6 +1,7 @@
 # SpeedifyTechX - Robots.txt
 # Website: https://speedifytechx.com
 # Contact: speedifytechx@gmail.com
+# Last Updated: 2026-08-14
 
 User-agent: *
 Allow: /
@@ -8,37 +9,78 @@ Allow: /
 # Sitemap location
 Sitemap: https://speedifytechx.com/sitemap.xml
 
-# Crawl delay (optional - 1 second)
+# Crawl delay (1 second for better server performance)
 Crawl-delay: 1
 
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 2
 
-# Block access to development/admin files (if any exist)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block access to development/admin files and sensitive directories
 Disallow: /.git/
 Disallow: /node_modules/
 Disallow: /.vscode/
+Disallow: /scripts/
+Disallow: /docs/
 Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /temp/
+Disallow: /cache/
 
-# Allow all CSS, JS, and image files for proper rendering
+# Allow important resource files for proper rendering
 Allow: /css/
 Allow: /js/
 Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.mp4$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.ico$
+
+# Block specific file types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
 
 # Company information
 # SpeedifyTechX - Premium Digital Solutions
-# Location: Chennai, India
-# Services: Web Development, AI Solutions, UI/UX Design
+# Founded: 2020
+# Location: Chennai, Tamil Nadu, India
+# Services: Web Development, AI Solutions, UI/UX Design, Software Development, Internship Training
+# Serving: 15+ Countries Worldwide
+# Projects Delivered: 50+
+# Team Size: 5 Expert Professionals
+# Client Satisfaction: 98%
