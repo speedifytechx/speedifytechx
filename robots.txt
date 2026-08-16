@@ -1,13 +1,13 @@
 # SpeedifyTechX - Robots.txt
-# Website: https://speedifytechx.com
+# Website: https://speedifytechx.in
 # Contact: speedifytechx@gmail.com
-# Last Updated: 2026-08-14
+# Last Updated: 2026-08-16
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://speedifytechx.com/sitemap.xml
+Sitemap: https://speedifytechx.in/sitemap.xml
 
 # Crawl delay (1 second for better server performance)
 Crawl-delay: 1
